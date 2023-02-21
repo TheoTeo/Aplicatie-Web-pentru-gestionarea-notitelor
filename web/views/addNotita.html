@@ -1,0 +1,68 @@
+<div id="notita-page" class="container" style="background-color:#adb5bd;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a style="font-family: Mochiy Pop P One; color:white" class="navbar-brand" href="#">Proiect Notite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="font-family: Mochiy Pop P One; color:white" class="nav-link" href="#loadHome()">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div>
+        <form id="formAddNotita">
+            <br><br>
+            <div class="mb-3">
+                <label for="idAddTitlu" class="form-label" style="font-family: Mochiy Pop P One; color:white">Titlu:
+                </label>
+                <input type="text" class="form-control" id="idAddTitlu">
+            </div>
+            <br><br><br><br><br>
+            <div class="mb-3">
+                <label for="idEditContinut" class="form-label"
+                    style="font-family: Mochiy Pop P One; color:white">Continut:
+                    <button id="buton_markdowns" type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="     -- new line
+*  /*  bold
+%  /%  italic
+@  /@  heading 1
+$  /$  heading 4
+[  /]  unordered list
+(  /) list element
+~  /~ inserare imagine">
+                        Add Markdowns
+                    </button>
+                </label>
+                <textarea class="form-control" id="idAddContinut" rows="30"></textarea>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="incarcare">
+                <label class="input-group-text" for="incarcare"
+                    style="font-family: Mochiy Pop P One; color:white">Upload</label>
+            </div>
+            <br><br><br>
+            <label for="tipEditNotita" class="form-label" style="font-family: Mochiy Pop P One; color:white">Tip notita:
+            </label>
+            <select class="form-select" id="tipNotita" required>
+                <option selected value="c" style="font-family: Mochiy Pop P One;">Curs</option>
+                <option value="s" style="font-family: Mochiy Pop P One;">Seminar</option>
+            </select>
+            <br><br>
+            <div class="col-12" id="btnFormEditNotita">
+                <button class="btn btn-secondary" type="submit"
+                    style="font-family: Mochiy Pop P One; color:white">Modificare</button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div id="notita-page" class="container" style="background-color:#adb5bd;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a style="font-family: Mochiy Pop P One; color:white" class="navbar-brand" href="#">Proiect Notite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="font-family: Mochiy Pop P One; color:white" class="nav-link" href="#loadHome()">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    {{#curs}}
+    <div>
+        <p>{{title}}</p>
+        <div id="markdown">
+        </div>
+        <br><br><br><br><br>
+        <p>
+            <a class="btn btn-secondary" style="font-family: Mochiy Pop P One; color:white;margin-left: 200px"
+                href="#editNotita('{{id}}')">Editeaza</a>
+            <a class="btn btn-secondary" style="font-family: Mochiy Pop P One; color:white;margin-left: 30px"
+                href="#deleteNotita('{{id}}')">Sterge</a>
+            <a class="btn btn-secondary" style="font-family: Mochiy Pop P One; color:white;margin-left: 30px"
+                href="#loadDiscipline('{{id}}')">Modifica disciplina</a>
+            <a class="btn btn-secondary" style="font-family: Mochiy Pop P One; color:white;margin-left: 30px"
+                href="#partajareUtilizator('{{id}}')">Partajeaza</a>
+        </p>
+        <br><br><br><br>
+        {{/curs}}
+    </div>
+
+
+
+
+
+
+</div>

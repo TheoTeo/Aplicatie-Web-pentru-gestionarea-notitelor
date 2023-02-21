@@ -1,0 +1,68 @@
+<div id="cursuri-page" class="container" style="background-color:#adb5bd;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a style="font-family: Mochiy Pop P One; color:white" class="navbar-brand" href="#">Proiect Notite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a style="font-family: Mochiy Pop P One; color:white" class="nav-link" href="#loadHome()">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br><br>
+    <p style="font-family: Mochiy Pop P One; color:white">Cursuri
+        <a style="margin-left: 950px" class="btn btn-outline-secondary my-2 my-sm-0 text-end" id="btnAdaugareCurs"
+            href="#addCurs()">&#43;</a>
+    </p>
+    <br>
+
+    <div id="sortari_div">
+
+
+        <div class="input-group mb-3" style="width: 200px;">
+            <select class="custom-select" id="sortareCursuri">
+                <option id="sort" selected value="..."></option>
+                <option id="sortareData" value="Data">Data</option>
+                <option id="sortareMaterie" value="Materie">Materie</option>
+            </select>
+            <div class="input-group-append">
+                <label class="input-group-text" for="sortareCursuri">Sortări</label>
+            </div>
+        </div>
+
+
+        <div style="margin-left: 100px" id="playground">
+            <form>
+                <p style="font-family: Mochiy Pop P One; color:white">Cuvânt cheie:
+                    <input type="text" id="keywords" size="24">
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    {{#cursuri}}
+    <div>
+        <p>
+            <a style="font-family: Mochiy Pop P One; color:white" href="#loadNotita('{{id}}')"
+                class="btn btn-secondary">{{title}}</a>
+        </p>
+
+        {{/cursuri}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
